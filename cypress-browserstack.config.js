@@ -39,7 +39,7 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
 
   e2e: {
-    baseUrl: 'https://license-qa.hager.com/iot',
+    baseUrl: 'http://www.webdriveruniversity.com/',
     env: {
       environment: 'QA',
     },
