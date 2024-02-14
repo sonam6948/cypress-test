@@ -12,7 +12,7 @@
     "build:prod": "vue-tsc --noEmit && vite build --mode prod --outDir dist-prod",
     "preview": "vite preview",
     "test:e2e:qa:browserstack": "browserstack-cypress run --sync--project ./cypress --env configFile=qa",
-    "test:e2e:qa:edge": "npx cypress run --project ./cypress --browser edge --env tags=\"@smoke\" configFile=qa",
+    "test:e2e:qa:edge": "npx cypress run --project ./cypress --browser edge --env configFile=qa",
     "test:e2e:qa:webkit": "npx cypress run --project ./cypress --browser webkit --env tags=\"@smoke\" configFile=qa -e jsonOutput=reports/cucumber-json/cucumber-report-webkit.json",
     "test:e2e:open": "npx cypress open --project ./cypress  --browser chrome --env configFile=qa",
     "reports": "node ./cypress/cucumber-html-reporter.js",

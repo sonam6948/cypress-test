@@ -14,5 +14,3 @@ Examples:
 |userName|password|expectedMessage|
 |webdriver|webdriver123|validation succeeded|
 |webdriver|lastName2|validation failed|
-
- 
