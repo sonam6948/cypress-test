@@ -1,0 +1,69 @@
+{
+  "auth": {
+    "username": "sonamsharma_2NJ97a",
+    "access_key": "kWG6qK82aMuRm9KER3zu"
+  },
+  "browsers": [
+    {
+      "browser": "chrome",
+      "os": "Windows 10",
+      "versions": ["latest"]
+    },
+
+    {
+      "browser": "edge",
+      "os": "Windows 10",
+      "versions": ["latest"]
+    }
+  ],
+  "run_settings": {
+    "cypress_config_file": "./cypress/cypress-browserstack.config.js",
+    "cypress_version": "12.10.0",
+    "project_name": "SHOD",
+    "build_name": "SHOD",
+    "exclude": [],
+    "parallels": "2",
+    "npm_dependencies": {
+     
+      "@cypress/browserify-preprocessor": "^3.0.2",
+      "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+      "@cypress/code-coverage": "^3.10.4",
+      "@cypress/vue": "^5.0.5",
+      "@cypress/webpack-dev-server": "^3.4.1",
+      "@cypress/webpack-preprocessor": "^6.0.1",
+      "typescript": "^5.0.4",
+      "ts-loader": "^9.4.2",
+      "@cypress/xpath": "^2.0.3",
+      "cypress": "^12.10.0",
+      "cypress-cloud": "^1.9.6",
+      "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
+      "cypress-real-events": "^1.8.1",
+      "cypress-vite": "^1.4.0",
+      "multiple-cucumber-html-reporter": "^1.21.6",
+      "node-fetch": "^3.3.1",
+      "playwright-webkit": "1.34"
+    },
+    "package_config_options": {
+      "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": false,
+        "stepDefinitions": "./support/step_definitions/**/*.{js,ts}",
+        "messages": {
+          "enabled": true,
+          "output": "reports/cucumber-ndjson/cucumber-report.ndjson"
+        },
+        "json": {
+          "enabled": true,
+          "formatter": "cucumber-json-formatter",
+          "output": "reports/cucumber-json/cucumber-report.json"
+        },
+        "filterSpecs": true,
+        "omitFiltered": true
+      }
+    },
+    "headless": false
+  },
+  "connection_settings": {
+    "local": false
+  },
+  "disable_usage_reporting": false
+}

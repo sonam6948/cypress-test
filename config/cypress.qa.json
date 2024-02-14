@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://https://reqres.in/",
+  "env": {
+    "environment": "QA"
+  }
+}
